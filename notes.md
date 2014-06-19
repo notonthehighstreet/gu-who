@@ -6,7 +6,7 @@ We're limited by what the GitHub API makes possible, but that's quite a lot:
 
 * Full Name in the GitHub profile
 * TwoFactorAuth
-* users.txt fotr the audit log
+* users.txt for the audit log
 * [Stretch] The user has a validated email with GitHub - http://developer.github.com/v3/users/emails/ - this requires us to have an OAuth-secured web interface that our users can access so we can read their profile emails!
 
 
@@ -18,7 +18,7 @@ Get a full list of members of our org, and find 'problem' users.
 Get the full list of Open issues in the 'people' repo *that have been opened by our bot*
 (GET /repos/:owner/:repo/issues?creator=gu-who-bot&state=open - note that the 'people' repo
 also contains pull-requests, which appear as issues within the GitHub API, so we have to be
-careful we don't interact with those) 
+careful we don't interact with those)
 
 Create an issue (like https://github.com/guardian/people/issues/13) for any user that doesn't
 have one yet - the username should be in the subject, and the issue should be assigned to that user.
